@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("images/bg-mobile.svg");
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    width: 100%;
+    padding: 1.9em 1.5em;
+}
+
+.navbar img {
+    width: 150px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.img {
+    margin: 2.7em  auto;
+}
+
+.img img {
+    width: 100%;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    margin: 1em 0;
+}
+
+button {
+    margin-top: 1.5em;
+    width: 180px;
+    padding: 1em;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 3px 4px 8px 1px hsl(258, 55%, 38%);
+    color: hsl(257, 40%, 49%);
+}
+
+.detail {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.contact {
+    margin-top: 4em;
+    text-align: center;
+}
+
+.contact a {
+    margin-right: 1em;
+    border-radius: 100%;
+    border: 1px solid #ccc;
+    padding: .5em;
+}
+
+.contact i {
+    font-size: 1em;
+    color: white;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+@media (min-width:720px) and (max-width: 1080px) {
+    .wrapper {
+        display: flex;
+        width: 90%;
+    }
+    
+    .img {
+        margin-right: 2.5em;
+    }
+
+    .content {
+        width: calc(50%);
+        text-align: start;
+        position: relative;
+    }
+
+    .title {
+        margin-inline: 0;
+        margin-block: 3em 1em;
+    }
+
+    .contact {
+        position:unset;
+    }
+}
+
+/* ขนาดหน้าจอ 720px ขึ้นไป */
+@media (min-width: 1080px) {
+    .wrapper {
+        display: flex;
+        width: 90%;
+    }
+    
+    .img {
+        margin-right: 2.5em;
+    }
+
+    .content {
+        width: calc(50%);
+        text-align: start;
+        position: relative;
+    }
+
+    .title {
+        margin-inline: 0;
+        margin-block: 3em 1.5em;
+    }
+
+    .contact {
+        position: absolute;
+        bottom: 20px;
+        right: 0;
+    }
+}
